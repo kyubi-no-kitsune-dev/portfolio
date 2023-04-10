@@ -17,6 +17,12 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: Prata;
+  src: url('./assets/fonts/Prata-Regular.ttf');
+  font-weight: 400;
+}
+
 /************ Default Css ************/
 * {
   margin: 0;
@@ -47,6 +53,8 @@ h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+  font-family: Prata;
+  font-style: normal;
 }
 
 p,
@@ -380,7 +388,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(214, 3, 8, 0.5) -5.91%, rgba(251, 219, 190, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -388,7 +396,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner h1 {
-  font-size: 65px;
+  font-size: 3.7vw;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -454,8 +462,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  color:#121212;
 }
 
 .Me::before {
@@ -468,4 +478,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0px;
   left: 0px;
   z-index: -1;
+}
+
+.Me h1{
+  font-size: 3.7vw;
+}
+
+.Me h1 span {
+  color:#BF3947;
+}
+
+.Me .me-border-top {
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: #BF3947;
+}
+
+.pt-7 {
+  padding-top: 5rem !important;
 }
