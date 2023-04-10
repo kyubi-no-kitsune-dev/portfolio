@@ -12,7 +12,7 @@ export const CoverPage = () => {
             <Container>
                 <div className="d-flex flex-column justify-content-center align-items-center my-auto">
                     <img src={logoCoverPage} className="w-50" title="logocoverpage" alt="logocoverpage" />
-                    <h1>We are super-duper awesome design studio</h1>
+                    <h1>Fabien Pineau</h1>
                 </div>
             </Container>
         </section>
