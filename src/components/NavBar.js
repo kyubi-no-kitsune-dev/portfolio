@@ -26,7 +26,7 @@ export const NavBar = () => {
 
     return (
         <Navbar expand="lg" id="coverpage" style={{ position: scrolled ? 'sticky' : 'relative' }}>
-            <a href="#MainNav" className="arrow"></a>
+            <a href="#nav-main" className="arrow"></a>
             <Navbar.Toggle aria-controls="nav-main" />
             <Navbar.Collapse id="nav-main">
                 <Container className="d-flex justify-content-between">
