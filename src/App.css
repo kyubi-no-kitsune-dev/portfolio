@@ -105,15 +105,18 @@ p.danger {
 
 /************ Coverpage Css ************/
 .bg-coverpage {
-  position: relative;
+/**  position: relative; **/
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(18, 18, 18, 1);
+  background-image: url('./assets/img/coverpage-bg.png');
+  background-size: cover;
 }
 
-.bg-coverpage::before {
+/**.bg-coverpage::before {
   content: "";
   background-color: rgb(18, 18, 18, 1);
   background-image: url('./assets/img/coverpage-bg.png');
@@ -125,7 +128,7 @@ p.danger {
   left: 0px;
   opacity: 0.75;
   z-index: -1;
-}
+} ****/
 
 /************ Navbar Css ************/
 nav.navbar {
@@ -361,7 +364,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 
-.banner::before {
+/****.banner::before {
   content: "";
   background-image: url('./assets/img/banner-bg.png');
   background-size: cover;
@@ -371,15 +374,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0px;
   left: 0px;
   z-index: -1;
-}
+} **/
 
 .banner {
-  position: relative;
   height: 100vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('./assets/img/banner-bg.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 
@@ -458,7 +463,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Me Css ************/
 
 .Me {
-  position: relative;
+ /** position: relative; **/
   height: 100vh;
   width: 100%;
   display: flex;
@@ -466,9 +471,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
   justify-content: center;
   color:#121212;
+  background-image: url('./assets/img/me-bg.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
-.Me::before {
+/**.Me::before {
   content: "";
   background-image: url('./assets/img/me-bg.png');
   background-size: cover;
@@ -478,7 +487,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0px;
   left: 0px;
   z-index: -1;
-}
+} **/
 
 .Me h1{
   font-size: 3.7vw;
@@ -496,4 +505,56 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .pt-7 {
   padding-top: 5rem !important;
+}
+
+.pb-7 {
+  padding-bottom: 5rem !important;
+}
+
+/************ Experience Css ************/
+
+.Experience {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Experience::before {
+  content: "";
+  background-image: url('./assets/img/bg-experience.png');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.bg-col-expe {
+  background: url('./assets/img/bg-col-expe.png') no-repeat center ;
+  background-size: cover;
+  height: 75vh;
+}
+
+.Experience .me-border-top {
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: #BF3947;
+  width: 191px;
+}
+
+.Experience .me-border-bottom {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #BF3947;
+}
+
+.bg-black {
+  background-color: #090B0E;
+  height: 75vh;
 }
