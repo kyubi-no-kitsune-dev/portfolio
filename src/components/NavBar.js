@@ -29,27 +29,20 @@ export const NavBar = () => {
             <a href="#nav-main" className="arrow"></a>
             <Navbar.Toggle aria-controls="nav-main" />
             <Navbar.Collapse id="nav-main">
-                <Container className="d-flex justify-content-between">
+                <Container className="d-flex p-0">
                     <Navbar.Brand href="#home">
                         <img src={logo} alt="logo" />
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
                         <span className="navbar-toggler-icon"></span>
                     </Navbar.Toggle>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                    <Navbar.Collapse id="basic-navbar-nav" className="d-flex justify-content-end">
+                        <Nav>
                             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+                            <Nav.Link href="#me" className={activeLink === 'me' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('me')}>About Me</Nav.Link>
                             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                         </Nav>
-                        <span className="navbar-text">
-                            <div className="social-icon">
-                                <a href="#"><img src={logo} alt="" /></a>
-                                <a href="#"><img src={logo} alt="" /></a>
-                                <a href="#"><img src={logo} alt="" /></a>
-                            </div>
-                            <button className="vvd" onClick={() => console.log('connect')} style={{marginTop: 'Opx' }}><span>Let's Connect</span></button>
-                        </span>
                     </Navbar.Collapse>
                 </Container>
             </Navbar.Collapse>
