@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import kitsuneImg from "../assets/img/kitsune.png";
 
 export const Banner = () => {
@@ -47,8 +46,13 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1 className="pt-4">{`Hi I'm `}<span className="wrap">{text}</span></h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
+                        <p>I am delighted to present my professional journey and technical skills in the field of computer science. As a passionate engineer, I have gained extensive experience and expertise in various areas such as software development, system architecture, and application deployment.<br/>
+
+Over the years, I have worked on a multitude of challenging projects that have allowed me to push my limits and explore new technologies. I have developed a deep understanding of programming languages, frameworks, and modern development tools, enabling me to design and implement efficient and scalable software solutions.<br/><br/>
+
+In my portfolio, you will discover a selection of projects I have completed, showcasing my technical skills, creativity, and ability to work in a team. I invite you to explore my work and discover how I can contribute to your next project or company.<br/><br/>
+
+Feel free to contact me to discuss your needs or to learn more about my skills. Thank you for visiting, and I hope to have the opportunity to collaborate with you soon.</p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={kitsuneImg} alt="kitsune"></img>
