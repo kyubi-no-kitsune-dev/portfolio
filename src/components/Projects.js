@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
 import reseauxImg from "../assets/img/reseaux.png";
-import kitsuneImg from "../assets/img/kitsune.png";
 import programmationImg from "../assets/img/programmation.png";
 import bigdataImg from "../assets/img/bigdata.png";
 

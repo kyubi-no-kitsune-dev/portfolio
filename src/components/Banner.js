@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import kitsuneImg from "../assets/img/kitsune.png";
 
 export const Banner = () => {
